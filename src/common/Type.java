@@ -27,4 +27,6 @@ public enum Type {
         throw new IllegalArgumentException();
     }
 
+    public static final Type[] CHOOSABLE_TYPES = new Type[] { Type.Aggiornamento,
+            Type.Attivazione, Type.Feedback };
 }

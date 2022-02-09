@@ -8,15 +8,13 @@
             "type": "java",
             "name": "Launch GingleSoftServer",
             "request": "launch",
-            "mainClass": "server.GingleSoftServer",
-            "args": "0 0 700 400 "
+            "mainClass": "server.GingleSoftServer"
         },
         {
             "type": "java",
             "name": "Launch GingleSoftClient",
             "request": "launch",
-            "mainClass": "client.GingleSoftClient",
-            "args": "700 0 700 400"
+            "mainClass": "client.GingleSoftClient"
         },
         {
             "type": "java",

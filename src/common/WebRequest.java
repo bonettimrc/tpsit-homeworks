@@ -15,21 +15,21 @@ public class WebRequest implements Externalizable {
     private int durata;
     private Result esito;
 
-    public WebRequest(String seriale, Category categoria, Type tipologia) {
+    public WebRequest(String seriale, Category categoria, Type tipologia, Result esito) {
         this.seriale = seriale;
         this.categoria = categoria;
         this.tipologia = tipologia;
-        this.esito = Result.Failed;
+        this.esito = esito;
         this.durata = 0;
         this.dataOra = LocalDateTime.now();
     }
 
     public WebRequest() {
-        this(randomSerial(), Category.randomCategory(), Type.randomType());
+        this(randomSerial(), Category.randomCategory(), Type.randomType(), Result.randomResult());
     }
 
     public WebRequest(Type type) {
-        this(randomSerial(), Category.randomCategory(), type);
+        this(randomSerial(), Category.randomCategory(), type, Result.randomResult());
     }
 
     private static String randomSerial() {
